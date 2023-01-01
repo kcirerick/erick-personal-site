@@ -1,0 +1,24 @@
+{
+  "name": "erick-personal-site",
+  "version": "1.0.0",
+  "description": "repo for my personal website where I will post programming projects and related content and blog posts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kcirerick/erick-personal-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kcirerick/erick-personal-site/issues"
+  },
+  "homepage": "https://github.com/kcirerick/erick-personal-site#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
