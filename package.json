@@ -1,27 +1,52 @@
 {
-  "name": "erick-personal-site",
-  "version": "1.0.0",
-  "description": "repo for my personal website where I will post programming projects and related content and blog posts",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kcirerick/erick-personal-site.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kcirerick/erick-personal-site/issues"
-  },
-  "homepage": "https://github.com/kcirerick/erick-personal-site#readme",
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "scripts": {
-    "start": "react-scripts start"
-  }
+	"name": "react-tailwindcss-portfolio",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@testing-library/jest-dom": "^5.11.4",
+		"@testing-library/react": "^11.1.0",
+		"@testing-library/user-event": "^12.1.10",
+		"framer-motion": "4.1.17",
+		"postcss-cli": "^10.1.0",
+		"react": "^18.1.0",
+		"react-countup": "^6.1.1",
+		"react-dom": "^18.1.0",
+		"react-icons": "^4.3.1",
+		"react-router-dom": "^6.0.2",
+		"react-scripts": "^5.0.1",
+		"react-scroll": "^1.8.4",
+		"styled-components": "^5.3.3",
+		"web-vitals": "^1.0.1"
+	},
+	"scripts": {
+		"start": "yarn run build:css && react-scripts start",
+		"build": "yarn run react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject",
+		"build:css": "postcss src/css/tailwind.css -o src/css/main.css"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"@tailwindcss/forms": "^0.5.2",
+		"autoprefixer": "^10.4.7",
+		"postcss": "^8.4.14",
+		"tailwindcss": "^3.0.24"
+	}
 }
